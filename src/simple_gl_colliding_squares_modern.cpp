@@ -72,7 +72,7 @@ int main(void)
   glUseProgram(shaderProgram);
 
   //target framerate
-  const auto Hz = 0.016;
+  const auto invFPS = 0.016;
   auto t0 = glfwGetTime();
 
   //render loop
@@ -81,8 +81,8 @@ int main(void)
     auto t1 = glfwGetTime();
     auto dt = t1 - t0;
     t0 = t1;
-    if (dt < Hz)
-      delay(Hz - dt);
+    if (dt < invFPS)
+      delay(invFPS - dt);
 
     //drawing code
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
