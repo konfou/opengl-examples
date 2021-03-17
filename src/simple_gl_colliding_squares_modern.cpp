@@ -10,7 +10,14 @@
 
 /**
  * Simple GLFW/GLEW-based demo of colliding squares (Modern OpenGL).
+ *
  * checkCollision() uses either absolute difference or AABB.
+ *
+ * References:
+ *  - https://learnopengl.com/Getting-started/Hello-Window
+ *  - https://learnopengl.com/Getting-started/Hello-Triangle
+ *  - https://learnopengl.com/Getting-started/Shaders
+ *  - https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection
  */
 
 void delay(double seconds);
